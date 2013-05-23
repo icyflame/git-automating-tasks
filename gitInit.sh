@@ -1,6 +1,8 @@
 #!/bin/bash
 
-#this will initialise(or reinitialise) a git repository and add the readme file.
+#written by Siddharth Kannan
+
+#this script will initialise(or reinitialise) a git repository and add the readme file.
 
 echo 'initialising a git repository:'
 echo
@@ -44,4 +46,11 @@ echo '=================================='
 echo '=================================='
 git log
 
+echo '=================================='
+echo '=================================='
+echo 'Changes comitted to the git repository'
+echo 'Press return key to exit'
 read
+
+
+
