@@ -30,7 +30,7 @@ echo
 echo 'enter the name of the branch:'
 read branch
 
-echo 'will try to push data to server:'
+echo 'trying to push data to server:'
 echo '=================================='
 echo '=================================='
 
