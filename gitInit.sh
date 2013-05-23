@@ -15,6 +15,10 @@ read commitMes
 
 git commit -m "$commitMes"
 
+echo 'The log for this git repo is as so:'
+echo
+echo
+echo "----------------"
 git log
 
 read
