@@ -25,7 +25,7 @@ echo '=================================='
 echo '=================================='
 git log
 
-echo 'the changes will now be pushed to server:'
+echo 'will try to push data to server:'
 echo '=================================='
 echo '=================================='
 
@@ -33,6 +33,6 @@ git push
 
 echo '=================================='
 echo '=================================='
-echo 'changes pushed to server'
+echo
 echo 'press the return key to exit'
 read
