@@ -25,11 +25,17 @@ echo '=================================='
 echo '=================================='
 git log
 
+
+echo
+echo 'enter the name of the branch:'
+read branch
+
 echo 'will try to push data to server:'
 echo '=================================='
 echo '=================================='
 
-git push
+
+git push origin $branch
 
 echo '=================================='
 echo '=================================='
