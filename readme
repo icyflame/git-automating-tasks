@@ -1,1 +1,5 @@
-this is the readme file for the test repo
+this is the repository that has all the bash scripts containing the git-related tasks.
+
+1. add remote location to repo
+2. initialise a repo
+3. push changes to the server

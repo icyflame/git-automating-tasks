@@ -9,6 +9,6 @@ read url
 git remote add origin $url
 
 echo 'push destination has been locked'
-echo "run \'gitPush.sh\' to push everything to the server"
+echo "run gitPush.sh to push everything to the server"
 
 read
