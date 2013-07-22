@@ -44,7 +44,7 @@ echo '=================================='
 echo "Enter the commit message:"
 read commitMes
 
-git commit -m -a "$commitMes"
+git commit -a -m "$commitMes"
 
 echo 'The log for this git repo is as so:'
 echo
