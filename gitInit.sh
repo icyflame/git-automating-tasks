@@ -17,6 +17,13 @@ read contentsOfReadme
 
 echo "$contentsOfReadme" > readme
 
+touch .gitignore
+
+echo "Enter the contents of the .gitignore file:"
+read contentsofgitignore
+
+echo "$contentsofgitignore" > .gitignore
+
 git add .
 
 echo
@@ -37,7 +44,7 @@ echo '=================================='
 echo "Enter the commit message:"
 read commitMes
 
-git commit -m "$commitMes"
+git commit -a -m "$commitMes"
 
 echo 'The log for this git repo is as so:'
 echo
