@@ -14,7 +14,7 @@ echo '=================================='
 echo "Enter the commit message:"
 read commitMes
 
-git commit -m "$commitMes"
+git commit -a -m "$commitMes"
 
 echo '=================================='
 echo '=================================='
