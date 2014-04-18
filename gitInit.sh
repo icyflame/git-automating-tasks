@@ -9,7 +9,7 @@ echo
 git init
 
 echo 'created the readme file:'
-touch readme
+touch README.md
 
 echo 
 echo 'enter the contents of the readme file:'
