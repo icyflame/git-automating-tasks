@@ -1,4 +1,4 @@
-#sandbox measues
+# sandbox measures
 
 rm -rf gitTest/
 mkdir gitTest
@@ -10,11 +10,13 @@ cd gitTest
 #############################
 #############################
 
-echo "Menu `date`"
+echo "`date`"
+echo "Menu"
 echo "[1] Initialise the repository"
 echo "[2] Commit sequence"
 echo "[3] Push sequence"
-echo "[4] Quit"
+echo "[4] Settings"
+echo "[5] Quit"
 echo -n "Enter your option: "
 read option
 
@@ -79,7 +81,63 @@ case $option in
 
 		;;
 
-	4) 
+	3)
+
+		echo "You have choosed to push the code to github server"
+		echo "Please enter the name of the branch to which you want to push the code to (default: master) : "
+read branch
+
+if [ "$branch" == "" ]
+then branch='master'
+fi
+
+echo "Pushing code to $branch"
+git push origin $branch
+
+;;
+
+4)
+
+echo "You have entered the settings page. You can change some stuff here :- "
+
+echo "Settings Sub Menu"
+echo "[1] Add remote address for the origin"
+echo "[2] Change the remote address of this repository"
+echo "[3] Change the branch that you are working on"
+echo "Enter your option now :- "
+read sub_opt
+
+case $sub_opt in
+
+1)
+
+echo "Enter the remote address :- "
+echo "(Kindly note that if the remote address is already entered then this command will bring up an error)"
+read $remote_addr
+
+git remote add origin $remote_addr
+
+;;
+
+2)
+
+# enter code for changing the remote address
+
+echo "You have chosen to change the remote address for the origin that is already stored"
+
+;;
+
+*)
+
+echo "Option unavailable"
+
+;;
+
+esac
+
+;;
+
+	5) 
 
 		echo "Thanks for using this script! - icyflame"
 		exit 0 
