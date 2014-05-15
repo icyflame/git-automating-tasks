@@ -1,7 +1,7 @@
 # sandbox measures
 
-rm -rf gitTest/
-mkdir gitTest
+#rm -rf gitTest/
+#mkdir gitTest
 cd gitTest
 
 #############################
