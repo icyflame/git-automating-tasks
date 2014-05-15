@@ -5,9 +5,17 @@ As is often the case, beginners using git from the command line (which is the be
 
 The individual scripts are named such that they are self-explanatory. I am working on a single script that will perform all these options at once. Once I am done, the script will be updated on this git repository.
 
-As of now the following tasks are supported:
+gitone.sh
+------
 
-1. gitAddRemote.sh :- Add a remote origin to the repository
-2. gitInit.sh :- Initialises the repository with a README.md file and also create a .gitignore file that will query the users as to what all files the user would not want to be ever added to the repository
-3. gitCommit.sh :- commit changes to the repository.
-4. gitPush.sh :- push changes to the server. The remote address must be added. If it is not added then a fatal error would come up. The user must run the gitAddRemote.sh script and then run gitPush.sh again.
+The final single script. I am working on this script currently. As of now, I am done with the add, commit, push sequences. I am yet to complete the settings tab. This settings tab will have basic stuff regarding the repository itself.
+
+Scripts for separate tasks
+----------
+
+|Name of script|Utility|
+|-------|--------|
+|`gitAddRemote.sh` | Add a remote origin to the repository|
+|`gitInit.sh` | Initialises the repository with a README.md file and also create a .gitignore file that will query the users as to what all files the user would not want to be ever added to the repository|
+|`gitCommit.sh` | commit changes to the repository.|
+|`gitPush.sh` | push changes to the server. The remote address must be added. If it is not added then a fatal error would come up. The user must run the gitAddRemote.sh script and then run gitPush.sh again.|
